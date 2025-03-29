@@ -8,7 +8,7 @@ function useCurrencyInfo(currency) {
         fetch(url).then((res) => res.json()).then((res) => setData(res[currency]))
 
 
-    }, [])
+    }, [currency])
     return data
 
 }
